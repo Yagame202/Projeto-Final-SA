@@ -1,6 +1,6 @@
 package S.A;
 
-public class Cadastrar {
+public class Monitorar {
 
     private boolean estaLigado = false;
 
