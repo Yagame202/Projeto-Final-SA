@@ -10,13 +10,13 @@ public class Main {
         double temperatura = entrada.nextDouble();
         entrada.nextLine();
         
-        System.out.println("| tem pessoas no ambiente? :");
-        String presenca = entrada.nextLine();
+        System.out.println("|Consumo de energia alto para o Horário? :");
+        String energia = entrada.nextLine();
         
-        if(temperatura <= 26 && presenca.equalsIgnoreCase("sim")) {
+        if(temperatura <= 18){
+        	novoArConcionado.temperatura();
+        }else{
         	novoArConcionado.ligar();
-        }else {
-        	novoArConcionado.desligar();
         }
         entrada.close();
     }
