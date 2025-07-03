@@ -7,7 +7,7 @@ public class Cadastrar {
     public void ligar() {
         if (!estaLigado) {
             estaLigado = true;
-            System.out.println("\n O ar condicionado esta ligado.");
+            System.out.println("\n O ar condicionado entrara em modo ventilação.");
         }
     }
     public void desligar() {
@@ -15,5 +15,11 @@ public class Cadastrar {
             estaLigado = false;
             System.out.println("\n O ar condicionado esta desligado.");
         }
+    }
+    public void temperatura() {
+    	if(estaLigado) {
+    		estaLigado = true;
+            System.out.println("\n O ar condicionado aumentar a temperatura.");
+    	}
     }
 }
