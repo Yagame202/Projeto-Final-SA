@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        Cadastrar novoArConcionado = new Cadastrar();
+        Monitorar monitorar = new Monitorar();
 
         System.out.println("| Digite a temperatura:");
         double temperatura = entrada.nextDouble();
@@ -14,9 +14,9 @@ public class Main {
         String energia = entrada.nextLine();
         
         if(temperatura <= 18){
-        	novoArConcionado.temperatura();
+        	monitorar.temperatura();
         }else{
-        	novoArConcionado.ligar();
+        	monitorar.ligar();
         }
         entrada.close();
     }
