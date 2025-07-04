@@ -1,1 +1,19 @@
 #Grupo: 1- Davi M | 2 - Gabriel | 3- Luis |  4 - Nicolas | 5 - Gustavo |
+
+Sistema para controle de consumo de energia
+
+"Redução do consumo de energia em equipamento de refrigeração e climatização".
+
+O nosso problema consiste na empresa Teksid que é uma empresa de ares-condicionados ela está com um problema que é o alto consumo de energia.
+
+Monitoramento inteligente: Softwares coletam e analisam dados de consumo em tempo real.
+Automação (IoT): Dispositivos são programados para ligar/desligar automaticamente com base em regras.
+Inteligência Artificial: Algoritmos preveem picos de consumo e otimizam o uso de energia.
+Gestão energética: Sistemas industriais programam o uso de máquinas nos horários mais baratos.
+Apps e plataformas web: Usuários acompanham e controlam o consumo por aplicativos.
+
+A nossa solução consiste em fazer um sistema que o pessoal da Teksid tenha como monitorar os ares-condicionados instalados nas casas/escritórios de seus cliente, e que eles possam controlar o consumo de energia, tanto para eles, tanto para o cliente.  
+
+No nosso código a gente se baseou bastante no fluxograma, nos ares-condicionados serão instalados sensores de temperara e umidada, consumo de energia e um "relógio" que marca a hora atual, esses dados vão ser enviados para um IA que vai fazer uma analise se tem que mudar algo para fazer com que o consumo de energia fique estável, no código colocamos que se o usuário colocar a temperatura em 18°C ou menos depois de um tempo o ar-condicionado vai aumentar a temperatura automaticamente para não ter tanto consumo de energia e a IA vai fazer a verificação de que se o consumo de energia estiver muito alto para certo horário, o sistema vai colocar o ar-condicionado em modo ventilação para reduzir o consumo de energia tambèm, ai depois que ela fizer essas verificações e ajustar, ela vai atualizar o sistema e ela vai fazer a mesma verificação 10 minutos depois.
+
+Acho que as melhorias futuras vai ser colocar um cadastro de ares-condicionados, porque nosso cliente tem que permitir com que a gente possa "mexer" no seu ar-condicionado, então, seria interessante implementar um cadastro de ares-condicionados, para que o controle fique mais fácil. (feito dia 03/07) melhorias vão ser feitas até o projeto final.
