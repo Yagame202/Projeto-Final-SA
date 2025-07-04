@@ -1,4 +1,4 @@
-# 🌟 S.A - Situação de Aprendizagem 🌟
+# S.A - Situação de Aprendizagem 
 
 ## 👥 Integrantes do Grupo #S.A
 
