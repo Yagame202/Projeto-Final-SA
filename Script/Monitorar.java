@@ -6,7 +6,7 @@ public class Monitorar {
 	public static final String BG_YELLOW = "\u001B[43m";
 	public static final String BG_WHITE = "\u001B[47m";
 	 
-	public static final String BLACK = "\u001B[30m"
+	public static final String BLACK = "\u001B[30m";
 	
 	public static final String RESET = "\u001B[0m";
 
