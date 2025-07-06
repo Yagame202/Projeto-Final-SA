@@ -1,41 +1,47 @@
 package S.A;
 
-public class Monitorar {
-	
-	public static final String BG_RED = "\u001B[41m";
-	public static final String BG_YELLOW = "\u001B[43m";
+import java.util.*;
+
+public class Main {
+	  
+    public static final String RESET = "\u001B[0m";
+    public static final String BLACK = "\u001B[30m";
+    public static final String YELLOW = "\u001B[33m";
+
+    public static final String BG_YELLOW = "\u001B[43m";
+    public static final String BG_BLUE = "\u001B[44m";
     public static final String BG_WHITE = "\u001B[47m";
-	 
-	public static final String BLACK = "\u001B[30m";
-	
-	public static final String RESET = "\u001B[0m";
 
-    private boolean estaLigado = false;
+    public static final String BOLD = "\u001B[1m";
 
-    public void ligar() {
-        if (!estaLigado) {
-            estaLigado = true;
-            System.out.println("\n| Ar-condicionado ligado normalmente. |");
-        } else {
-            System.out.println("\n| Ar-condicionado ja esta ligado. |");
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        Monitorar monitorar = new Monitorar();
+
+        while (true) {
+            System.out.println(BG_BLUE + BLACK +"| SISTEMA DE MONITORAMENTO DE ENERGIA |" + RESET);
+
+            System.out.print(YELLOW + BOLD +"| Digite a temperatura atual (°C): " + RESET);
+            double temperatura = entrada.nextDouble();
+            entrada.nextLine();
+
+            System.out.print(YELLOW + BOLD + "| O consumo de energia esta alto para o horário? (sim ou nao) " + RESET);
+            String energiaAlta = entrada.nextLine();
+
+            
+            if (temperatura <= 18) {
+                monitorar.ajustarTemperatura();
+            } else {
+                monitorar.ligar();
+            }
+
+         
+            if (energiaAlta.equalsIgnoreCase("sim")) {
+                monitorar.ativarModoVentilacao();
+            }
+
+            monitorar.atualizarSistema();
+            System.out.println(BG_WHITE + BLACK +"\n|⚙️ Aguardando 10 minutos... |" + RESET);  
         }
-    }
-    public void desligar() {
-        if (estaLigado) {
-            estaLigado = false;
-            System.out.println("\n| Ar-condicionado desligado. |");
-        }
-    }
-    public void ajustarTemperatura() {
-        System.out.println(BG_RED + BLACK +"\n| Temperatura muito baixa! Aumentando automaticamente para reduzir o consumo |" + RESET);
-    }
-
-    public void ativarModoVentilacao() {
-        System.out.println(BG_YELLOW + BLACK + "\n| Consumo de energia alto! Ativando modo ventilação |" + RESET);
-    }
-
-    public void atualizarSistema() {
-        System.out.println(BG_WHITE + BLACK + "\n| Sistema atualizado com as novas configurações  |");
     }
 }
-
