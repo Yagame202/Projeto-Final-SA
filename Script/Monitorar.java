@@ -27,7 +27,7 @@ public class Monitorar {
         }
     }
     public void ajustarTemperatura() {
-        System.out.println(BG_RED + BLACK +"\n| Temperatura muito baixa! Aumentando automaticamente para reduzir o consumo |" + RESET);
+        System.out.println(BG_RED + BLACK + BOLD +"\n| Temperatura muito baixa! Aumentando automaticamente para reduzir o consumo |" + RESET);
     }
 
     public void ativarModoVentilacao() {
